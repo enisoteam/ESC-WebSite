@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ENISo Smart Challenge</title>
+		<style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 550px;  /* The height is 400 pixels */
+        width: 900px;  /* The width is the width of the web page */
+       }
+    </style>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400|Montserrat:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		 <link rel="stylesheet" href="css/animate.css">
+		     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload" background="alfa.jpg">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Eniso Smart Challenge</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html" style="bold">Home</a></li>
+								<a>Competitions</a>
+								<ul>
+								    <li><a href="suiveur.html">HistoLine</a></li>
+                                <li><a href="bateaumax.html">The Curse of the Black Pearl</a></li>
+                                <li><a href="bateaumin.html">The Legend of the Seven Seas</a></li>
+                                <li><a href="ys.html">The islands of ys</a></li>
+                                <li><a href="Atlantis.html">Atlantis Emerged</a></li>
+                            </ul>
+                            <li><a href="sponsor.html" style="bold">Sponsors & Media 2018</a></li>
+                            <li><a href="gallerie.html" style="bold">Gallary</a></li>
+                                 <li><a href="about.html" style="bold">About</a></li>
+                        
+							</ul>
+							
+						</div>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<div class="logo"> <img src="images2/logoesc.png" height="100"></div>
+							<h2>Eniso Smart Challenge V5 </h2>
+						</div>
+					</section>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="Atlantis.html" class="image"><img src="images2/ic1.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Atlantis Emerged</h2>
+										<p>After more than 3000 years being drown in the sea , atlantis has risen up and it’s calling for it’s champion .
+                                        Join the battle by fighting for the glory and be atlantis's new champion.</p>
+										<a href="Atlantis.html" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="bateaumax.html" class="image"><img src="images2/ic2.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">The Curse of the Black Pearl</h2>
+										<p>Pirates will coming back . Barbossa is on the way to break the curse.
+                                        help  the cursed crew of the Black Pearl  and enjoy the adventure .</p>
+										<a href="bateaumax.html" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="bateaumin.html" class="image"><img src="images2/ic4.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">The Legend of the Seven Seas</h2>
+										<p>Hi Hi captain ! the legend of seven mers is here to break the balls . bring your little ships and welcome dear juniors .</p>
+										<a href="bateaumin.html" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+							<!-- five -->
+							<section id="four" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<a href="ys.html" class="image"><img src="images2/ic5.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">The islands of YS</h2>
+										<p>Call for brave knights! Save the islands of ys from drowning...travel to the centre of the sea in search of the hidden key. Time is the enemy so hurry up and show them your true chivalry.</p>
+										<a href="ys.html" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+
+							<section id="five" class="wrapper spotlight style3">
+								<div class="inner">
+									<a href="suiveur.html" class="image"><img src="images2/ic3.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">HistoLigne</h2>
+										<p>The road to the technologie we have today has been a tough one. Wanna see if you're able to reach the future come test your abilities on our path to greatness!!</p>
+										<a href="suiveur.html" class="special">Learn more</a>
+									</div>
+								</div>
+							</section>
+
+
+						<!-- Four -->
+
+								<section id="six" class="wrapper alt style001" align="center">
+      
+                       <div class="gtco-section gto-features" align="center">
+        <h2>Where are we ?</h2>
+        <br>
+ <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 35.8205244, lng: 10.5922027};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom:16, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ38sZ_gdyVYtk0h0mWKaWd0ZA20KCML4&callback=initMap">
+    </script>
+    </div>
+                            
+							</section>
+						<section id="five" class="wrapper spotlight style001" >
+								<div class="inner" align="center">
+									<div class="content">
+										<h2 class="headertekst" style="font-size: 50px" ><font color="#4c5c96" >Our Partners</font></h2>
+										 <tr align=center>
+                                   <td><img src="images2/part1.png" height="250" /></td>
+                                    <td><img src="images2/logoesc.png" height="250" /></td>
+                                  <td><img src="images2/logo2.png" height="250" /></td>
+                              
+
+                                      </tr>
+									</div>
+								</div>
+							</section>
+
+				
+
+				<!-- Footer -->
+<section id="footer">
+                   <section id="footer">
+                        <div class="inner">
+                            <a target="_blank" href="https://web.facebook.com/events/442873366110506/">
+                        <h3>
+                            <i class="icon-facebook" style="font-size: 50px"></i>
+                            ENISo SMART CHALLENGE
+                        </h3>
+                    </a>
+                             <p>Want to sharp your skills in robots making, <a target="_blank"
+                                                                      href="https://www.facebook.com/events/389858944920897/">
+                        join </a>the event then !</p>
+                            <form method="post" action="#">
+                                <div class="fields">
+                                    <div class="field">
+                                        <label for="name">Name</label>
+                                        <input type="text" name="name" id="name" />
+                                    </div>
+                                    <div class="field">
+                                        <label for="email">Email</label>
+                                        <input type="email" name="email" id="email" />
+                                    </div>
+                                    <div class="field">
+                                        <label for="message">Message</label>
+                                        <textarea name="message" id="message" rows="4"></textarea>
+                                    </div>
+                                </div>
+                                <ul class="actions">
+                                    <li><input type="submit" value="Send Message" /></li>
+                                </ul>
+                            </form>
+                            <ul class="contact">
+                                <li class="fa-home">
+                                    <a target="_blank"
+                                       href="https://www.google.tn/maps/place/Ecole+Nationale+des+Ing%C3%A9nieurs+de+Sousse/@35.8206583,10.5901526,16.25z/data=!4m5!3m4!1s0x12fd8aeb930217f1:0x26a65273b05b6eff!8m2!3d35.82039!4d10.5930903?hl=fr">
+                                        <p>National Engineering School of Sousse</p>
+                                    </a>
+                                </li>
+                                <li class="fa-phone">Belgacem Fatma : +216 29.466.150</li>
+                                <li class="fa-envelope"><a href="mailto:enisosmartchellenge@gmail.com">enisosmartchallenge@gmail.com</a></li>
+                                <li class="fa-facebook"><a target="_blank" href="https://www.facebook.com/events/389858944920897/">Ensio Smart Challenge</a></li>
+                            </ul>
+                            <ul class="copyright">
+                                
+                        <li><small>&copy; 2019 ENISo Smart Challenge. All Rights Reserved.</small></li>
+                        <li><p>
+                            <small>&copy; Designed by <a href="https://www.linkedin.com/in/derouiche-ghafir/" target="_blank">Derouiche Ghafir</a>
+                                and <a href="https://www.linkedin.com/in/yasmine-sghaier-841ba412b/" target="_blank">Sghaier Yasmine </a>
+                            </small>
+                        </p></a></li>
+                            </ul>
+                        </div>
+                    </section>
+
+            </div>
+
+        <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
+
+
+
+	</body>
+</html>
